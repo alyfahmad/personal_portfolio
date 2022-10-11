@@ -1,5 +1,5 @@
 {
-  "homepage": "http://alyfahmad.github.io/personal-portfolio",
+  "homepage": "http://alyfahmad.github.io/personal_portfolio",
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +13,6 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "g": "^2.0.1",
-    "gh-pages": "^4.0.0",
     "nodemailer": "^6.8.0",
     "npm": "^8.19.2",
     "react": "^18.2.0",
@@ -28,9 +27,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -52,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

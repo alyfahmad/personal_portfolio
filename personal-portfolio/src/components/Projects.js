@@ -1,42 +1,60 @@
 import { Container, Nav, Tab, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import underDevelopment from "../assets/img/underDevelopment.gif";
+import underDevelopment2 from "../assets/img/underDevelopment2.gif";
+import underDevelopment3 from "../assets/img/underDevelopment3.gif"
 
 export const Projects = () => {
-    const projects = [
+    const projects1 = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment3,
+        }
+    ];
+    const projects2 = [
+        {
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment3,
+        }
+    ];
+    const projects3 = [
+        {
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment3,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment2,
         },
+        {
+            title: "Under Development",
+            description: "Coming Soon",
+            imgUrl: underDevelopment,
+        }
     ];
     return(
         <section className="projects" id="projects">
@@ -60,7 +78,7 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            projects1.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
@@ -71,8 +89,34 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second"></Tab.Pane>
-                                <Tab.Pane eventKey="third"></Tab.Pane>
+                                <Tab.Pane eventKey="second">
+                                    <Row>
+                                        {
+                                            projects2.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <Row>
+                                        {
+                                            projects3.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>

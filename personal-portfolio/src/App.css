@@ -233,7 +233,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 200px 0 100px 0;
   /* background-image: url('./assets/img/banner-bg.png'); */
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
@@ -306,6 +306,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills */
 .skill {
+  padding: 100px 0px 0px 0px;
   height: 400px;
   position: relative;
   background: rgb(2,0,36);
@@ -555,7 +556,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 /************ Projects Css ************/
 .projects {
-  padding: 0px 0px 40px 0px;
+  padding: 100px 0px 40px 0px;
   position: relative;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
@@ -684,7 +685,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
-  padding: 60px 0 60px 0;
+  padding: 100px 0 100px 0;
 }
 .contact img {
   width: 92%;

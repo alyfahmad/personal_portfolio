@@ -554,6 +554,209 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     stroke-dashoffset: 472;
   }  
 }
+/************ Experience Unused Css ************/
+/* .experienceunused .wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.experienceunused .accordion {
+  width: 500px;
+}
+
+.experienceunused .item {
+  background: #B8B8B8;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+
+.experienceunused .title {
+  color: #85662b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.experienceunused .content {
+  color: #8b7f75;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.experienceunused .content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+} */
+
+/************ Experience Css ************/
+.experience {
+  padding: 100px 0px 0px 0px;
+  /* height: 400px; */
+  position: relative;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.experience-bx {
+  background: #000000;
+  border-radius: 64px;
+  text-align: center;
+  margin-top: -60px;
+  height: 125%;
+  /* border: 1px solid blue; */
+}
+
+.experience h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
+.experience h3 {
+	/* font-family: 'Centra', sans-serif !important; */
+	font-size: 30px;
+}
+
+.experience h5 {
+	/* font-family: 'Centra', sans-serif !important; */
+	font-size: 18px;
+}
+
+.experience h6 {
+	/* font-family: 'Centra', sans-serif !important; */
+	font-size: 16px;
+}
+
+.experience .accordion-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .experience .accordion-wrap a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.experience .accordion-wrap a:hover {
+  text-decoration: none;
+} */
+
+.experience .accordion-wrap .accordion {
+  position: relative;
+  border-top: 1px solid #fff;
+}
+
+.experience .accordion-wrap .accordion:last-child {
+  border-bottom: 1px solid #fff;
+}
+ 
+.experience .accordion-wrap .accordion .teaser {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; 
+  width: 100%;
+  padding: 24px 100px 24px 0;
+  position: relative; 
+}
+
+.experience .accordion-wrap .accordion .teaser:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.experience .accordion-wrap .accordion .teaser .time {
+  margin-top: 5px;
+  width: 200px;
+}
+
+.experience .accordion-wrap .accordion .teaser .title {
+  cursor: pointer;
+}
+
+.experience .accordion-wrap .accordion .teaser .title .theme {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+@media (max-width: 990px) {
+  .accordion-wrap .accordion .teaser {
+    flex-direction: column;
+ }
+}
+
+/* .experience .accordion-wrap .accordion .content.show {
+  padding: 0 120px 30px 200px;
+} */
+
+@media (max-width: 1200px) {
+  .accordion-wrap .accordion .content.show {
+    padding: 0 120px 30px 0;
+ }
+}
+
+.experience .accordion-wrap .accordion .content {
+  color: #ffffff;
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.experience .accordion-wrap .accordion .content.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.experience .accordion-wrap .accordion .accordion-toggle {
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.14);
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.experience .accordion-wrap .accordion .accordion-toggle span {
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.experience .accordion-wrap .accordion .accordion-toggle span.one {
+  height: 1px;
+  width: 26px;
+  position: absolute;
+  top: 50%;
+}
+
+.experience .accordion-wrap .accordion .accordion-toggle span.two {
+  width: 1px;
+  height: 26px;
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transform: rotate(120deg);
+}
+
+.experience .accordion-wrap .accordion .accordion-toggle span.two {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
 /************ Projects Css ************/
 .projects {
   padding: 100px 0px 40px 0px;

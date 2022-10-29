@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Experience = () => {
     const experience = [
@@ -88,37 +90,43 @@ export const Experience = () => {
     return(
         <section className="experience" id="experience">
             <Container>
-                <Row>
-                    <Col>
-                    <h2>Work Experience</h2><br/>
-                        {/* <div className="experience2-bx"> */}
-                        <div className="accordion-wrap">
-                            <div className="accordion">
-                                {experience.map((item,i) => (
-                                    <div className="teaser">
-                                        <div className="time">
-                                            <h5>{item.time}</h5>
-                                        </div>
-                                        <div className="title" onClick={() => toggle(i)}>
-                                            <h3>{item.title}</h3>
-                                            <h6 className="theme">{item.subtitle}</h6>
-                                            <div className={selected === i ? 'content show' : 'content'}>
-                                                {item.description}
+                <TrackVisibility>
+                {({ isVisible }) => 
+                    <div className={isVisible ? "animate__animated animate__zoomInDown " : "" }>   
+                        <Row>
+                            <Col>
+                            <h2>Work Experience</h2><br/>
+                                {/* <div className="experience2-bx"> */}
+                                <div className="accordion-wrap">
+                                    <div className="accordion">
+                                        {experience.map((item,i) => (
+                                            <div className="teaser">
+                                                <div className="time">
+                                                    <h5>{item.time}</h5>
+                                                </div>
+                                                <div className="title" onClick={() => toggle(i)}>
+                                                    <h3>{item.title}</h3>
+                                                    <h6 className="theme">{item.subtitle}</h6>
+                                                    <div className={selected === i ? 'content show' : 'content'}>
+                                                        {item.description}
+                                                    </div>
+                                                </div>
+                                                <div className="accordion-toggle" onClick={() => toggle(i)}>
+                                                    <span className={selected === i ? 'one' : 'two'}>
+                                                    </span>
+                                                    <span className='one'>
+                                                    </span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className="accordion-toggle" onClick={() => toggle(i)}>
-                                            <span className={selected === i ? 'one' : 'two'}>
-                                            </span>
-                                            <span className='one'>
-                                            </span>
-                                        </div>
+                                        ))}
                                     </div>
-                                ))}
-                            </div>
-                        </div>
-                        {/* </div> */}
-                    </Col>
-                </Row>
+                                </div>
+                                {/* </div> */}
+                            </Col>
+                        </Row>
+                    </div>
+                }
+                </TrackVisibility>
             </Container>
         </section>
     )

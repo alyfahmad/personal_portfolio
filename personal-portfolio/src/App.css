@@ -306,8 +306,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Skills */
 .skill {
-  padding: 100px 0px 0px 0px;
-  height: 400px;
+  padding: 10vh 0vh 0vh 0vh;
+  height: 100%;
   position: relative;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
@@ -318,29 +318,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-bx {
   background: #000000;
-  border-radius: 64px;
+  border-radius: 10vh;
   text-align: center;
-  margin-top: -60px;
-  height: 125%;
+  /* margin-top: -5%; */
+  /* height: 150%; */
   /* border: 1px solid blue; */
 }
 
 .skill-bx-testing{
   background: #000000;
-  border-radius: 64px;
+  border-radius: 10vh;
   text-align: center;
-  margin-top: -60px;
-  height: 125%;
+  /* margin-top: -5%; */
+  /* height: 150%; */
   /* border: 1px solid blue; */
 }
 
-.skill h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-top: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 /* .skill p {
   color: #B8B8B8;
@@ -352,7 +345,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-slider {
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   position: relative;
 }
 
@@ -374,16 +367,249 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 } */
 
 .skill-slider {
-  height: 250px;
+  height: 42vh;
 }
 
-.skill-slider .item .gauge{
-  width: 160px;
-  height: 160px;
-  position: relative;
-  top: 80px;
-  left: 135px;
+@media (max-width: 480px) {
+  .skill-slider .item .gauge{
+    width: 40vh;
+    height: 24vh;
+    position: relative;
+    top: 10vh;
+    left: 17vh;
+  }
+
+  .skill-bx .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    /* top: 0vh; */
+    left: 3vh;
+  }
+  
+  .skill-bx-testing .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    /* top: 0vh; */
+    left: 3vh;
+  }
+
+  .skill-bx .item h5{
+    /* text-align: center; */
+    /* margin-top: 100px; */
+    position: relative;
+    /* left: -0vh; */
+    top: 2vh;
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+  
+  
+  .skill-bx-testing .item h5{
+    position: relative;
+    /* left: 4vh; */
+    top: 2vh;
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+
+  .skill-slider .item svg{
+    position: absolute;
+    top: 2vh;
+    left: 13vh;
+  }
+  
+  .skill-bx-testing .skill-slider .item svg{
+    position: absolute;
+    top: 2vh;
+    left: 13vh;
+  }
+
+  .skill-slider .item .circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 5vw;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    /* animation: anim 1s linear forwards; */
+  }
+
+  .skill h2 {
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+    /* margin-top: 0px; */
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+  }
 }
+ /* Screen: 1366x768 */
+@media  (min-width: 481px) and (max-width: 1366px) {
+  .skill-slider .item .gauge{
+    width: 40vh;
+    height: 26vh;
+    position: relative;
+    top: 13vh;
+    left: 82vh;
+  }
+
+  .skill-bx .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    top: -3vh;
+    left: 2vh;
+  }
+  
+  .skill-bx-testing .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    top: -3vh;
+    left: 2vh;
+  }
+
+  .skill-bx .item h5{
+    /* text-align: center; */
+    /* margin-top: 100px; */
+    position: relative;
+    /* left: -0vh; */
+    /* top: 2vh; */
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+  
+  
+  .skill-bx-testing .item h5{
+    position: relative;
+    /* left: 4vh; */
+    /* top: 0vh; */
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+
+  .skill-slider .item svg{
+    position: absolute;
+    top: 0vh;
+    left: 75vh;
+  }
+  
+  .skill-bx-testing .skill-slider .item svg{
+    position: absolute;
+    top: 0vh;
+    left: 75vh;
+  }
+
+  .skill-slider .item .circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 1.5vw;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    /* animation: anim 1s linear forwards; */
+  }
+
+  .skill h2 {
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+    /* margin-top: 0px; */
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+  }
+}
+ /* Screen: 1920x1080 */
+@media   (min-width: 1367px) and (max-width: 1920px) {
+  .skill-slider .item .gauge{
+    width: 40vh;
+    height: 26vh;
+    position: relative;
+    top: 13vh;
+    left: 82vh;
+  }
+
+  .skill-bx .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    top: -2.5vh;
+    left: -61vh;
+  }
+  
+  .skill-bx-testing .number h3{
+    font-weight: bold;
+    color: rgb(255, 249, 249);
+    position: absolute;
+    top: -2.5vh;
+    left: -61vh;
+  }
+
+  .skill-bx .item h5{
+    /* text-align: center; */
+    /* margin-top: 100px; */
+    position: relative;
+    /* left: -0vh; */
+    /* top: 4vh; */
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+  
+  
+  .skill-bx-testing .item h5{
+    position: relative;
+    /* left: 4vh; */
+    /* top: 0vh; */
+    /* position: absolute;
+    top: 160px;
+    left: 200px; */
+    /* margin: 200px 0px 0px 90px; */
+  }
+
+  .skill-slider .item svg{
+    position: absolute;
+    top: 4vh;
+    left: 15vh;
+  }
+  
+  .skill-bx-testing .skill-slider .item svg{
+    position: absolute;
+    top: 4vh;
+    left: 15vh;
+  }
+
+  .skill-slider .item .circle{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 1.1vw;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    /* animation: anim 1s linear forwards; */
+  }
+
+  .skill h2 {
+    font-size: calc(24px + 1vw);
+    font-weight: 700;
+    /* margin-top: 0px; */
+    padding-top: 2vh;
+    /* padding-bottom: -16vh; */
+  }
+}
+/* .skill-slider .item .gauge{
+  width: 40vh;
+  height: 26vh;
+  position: relative;
+  top: 13vh;
+  left: 82vh;
+} */
 
 /* .skill .skill-bx .skill-slider .item-left .outer-left{
   width: 160px;
@@ -405,48 +631,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
               0px 12px 10px -10px rgba(255,255,255,0.7)
 } */
 
-.skill-bx .number h3{
-  font-weight: bold;
-  color: rgb(255, 249, 249);
-  position: absolute;
-  top: -35px;
-  left: 57px;
-}
-
-.skill-bx .item h5{
-  text-align: center;
-  margin-top: 10px;
-  /* position: absolute;
-  top: 160px;
-  left: 200px; */
-  /* margin: 200px 0px 0px 90px; */
-}
-
-.skill-bx-testing .number h3{
-  font-weight: bold;
-  color: rgb(255, 249, 249);
-  position: absolute;
-  top: -27px;
-  left: 57px;
-}
-
-.skill-bx-testing .item h5{
-  text-align: center;
-  margin-top: 10px;
-  /* position: absolute;
-  top: 160px;
-  left: 200px; */
-  /* margin: 200px 0px 0px 90px; */
-}
-
-.skill-slider .item .circle{
-  fill:none;
-  stroke: url(#GradientColor);
-  stroke-width: 20px;
-  stroke-dasharray: 472;
-  stroke-dashoffset: 472;
-  /* animation: anim 1s linear forwards; */
-}
 
 .skill-slider .item .circle-animation65{
   animation: anim65 20s linear infinite;
@@ -466,18 +650,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-slider .item .circle-animation95{
   animation: anim95 20s linear infinite;
-}
-
-.skill-slider .item svg{
-  position: absolute;
-  top: -20px;
-  left: 135px;
-}
-
-.skill-bx-testing .skill-slider .item svg{
-  position: absolute;
-  top: -12px;
-  left: 135px;
 }
 
 @keyframes anim65 {

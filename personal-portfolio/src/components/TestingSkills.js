@@ -135,7 +135,7 @@ export const TestingSkills = () =>  {
                                         </defs>
                                         <circle class="circle circle-animation65" cx="80" cy="80" r="70" stroke-linecap="round" />
                                     </svg>
-                                    <h5>Azure Pipeline integration and Parallel Execution </h5>
+                                    <h5>Azure Pipeline integration and<br/> Parallel Execution </h5>
                                 </div>
                                 <div className="item">
                                     <div class="gauge">
@@ -219,7 +219,7 @@ export const TestingSkills = () =>  {
                                         </defs>
                                         <circle class="circle circle-animation85" cx="80" cy="80" r="70" stroke-linecap="round" />
                                     </svg>
-                                    <h5>Datebase and Data Conversion Testing</h5>
+                                    <h5>Datebase and <br/>Data Conversion Testing</h5>
                                 </div>
                                 <div className="item">
                                     <div class="gauge">

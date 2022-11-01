@@ -82,29 +82,86 @@ p.danger {
 }
 
 /************ Navbar Css ************/
-nav.navbar {
-  padding: 18px 0;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-  transition:  0.32s ease-in-out;
-}
-nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #121212;
-}
-nav.navbar a.navbar-brand {
+
+/* nav.navbar a.navbar-brand {
     width: 9%;
+} */
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .navbar-text button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 18px;
+    font-size: 18px;
+    /* margin-left: 18px; */
+    position: relative;
+    left: 18px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 0 2vh;
+    font-size: calc(12px + 1vh);
+    opacity: 0.75;
+    text-align: center;
+  }
+  nav.navbar {
+    padding: 2vh 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32s ease-in-out;
+  }
+  nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+  }
+  nav.navbar.active {
+    padding: 0px 0;
+    background-color: #121212;
+  }
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
-  color: #fff !important;
-  letter-spacing: 0.8px;
-  padding: 0 25px;
-  font-size: 18px;
-  opacity: 0.75;
+
+@media (min-width: 481px) and (max-width: 1920px) {
+  .navbar-text button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+  }
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #fff !important;
+    letter-spacing: 0.8px;
+    padding: 0 0 0 1.75vw;
+    font-size: calc(12px + 1vh);
+    opacity: 0.75;
+  }
+  nav.navbar {
+    padding: 2vh 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32s ease-in-out;
+  }
+  nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #121212;
+  }
+
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -150,17 +207,12 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.navbar-text button {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-left: 18px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
+
+.navbar .brand_logo {
+  width:6vh;
+  height:6vh;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
@@ -186,13 +238,13 @@ span.navbar-text {
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
-	outline: none;
+	  outline: none;
     box-shadow: none;
 }
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
-  background-image: none;
+  /* background-image: none; */
   position: relative;
   border-bottom: 2px solid #fff;
   transition: all 300ms linear;

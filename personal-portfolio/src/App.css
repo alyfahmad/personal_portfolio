@@ -1341,16 +1341,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
- /* .footer img {
-  width: 26%;
-}  */
-.footer p {
+
+.footer .align-item-start {
+  text-align: start;
+}
+
+.footer .align-item-start img {
+  /* padding-left: 1vw; */
+  width:5vh;
+  height:5vh;
+  margin: 1vh 0 1vh 0;
+}
+
+.footer .social-icon {
+  margin: 1vh 0 1vh 0;
+}
+
+
+/* .footer p {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
-}
+} */
 
 /* .App {
   text-align: center;

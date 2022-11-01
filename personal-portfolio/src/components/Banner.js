@@ -58,9 +58,9 @@ export const Banner = () => {
       <Container>
         <Row className="aligh-items-center"> 
           <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
             {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeInDown" : "" }>
+              <div className={isVisible ? "animate__animated animate__zoomIn animate_slow" : "" }>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Alif Ahmad`}<br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Quality Assurance Engineer", "Automation Engineer", "Data Engineer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Seasoned experience in automation, data quality assurance, white box and manual testing for one of the leading Cloud based Practice Management Software provider 
@@ -74,9 +74,9 @@ export const Banner = () => {
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
+            <TrackVisibility partialVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__zoomIn animate_slow" : ""}>
                   <img src={titleImage} alt="Header Img"/>
                 </div>}
             </TrackVisibility>

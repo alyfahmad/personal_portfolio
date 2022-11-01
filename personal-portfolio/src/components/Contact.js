@@ -72,7 +72,7 @@ export const Contact = () => {
         <section className="contact" id="connect">
             <ToastContainer />
             <Container>
-                <TrackVisibility>
+                <TrackVisibility partialVisibility>
                 {({ isVisible }) => 
                     <div className={isVisible ? "animate__animated animate__zoomIn" : "" }>    
                         <Row className="align-items-center">

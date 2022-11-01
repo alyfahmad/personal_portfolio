@@ -90,9 +90,9 @@ export const Experience = () => {
     return(
         <section className="experience" id="experience">
             <Container>
-                <TrackVisibility>
+                <TrackVisibility partialVisibility>
                 {({ isVisible }) => 
-                    <div className={isVisible ? "animate__animated animate__zoomInDown " : "" }>   
+                    <div className={isVisible ? "animate__animated animate__zoomIn animate_slow" : "" }>   
                         <Row>
                             <Col>
                             <h2>Work Experience</h2><br/>
@@ -108,7 +108,7 @@ export const Experience = () => {
                                                     <h3>{item.title}</h3>
                                                     <h6 className="theme">{item.subtitle}</h6>
                                                     <div className={selected === i ? 'content show' : 'content'}>
-                                                        {item.description}
+                                                        <p>{item.description}</p>
                                                     </div>
                                                 </div>
                                                 <div className="accordion-toggle" onClick={() => toggle(i)}>

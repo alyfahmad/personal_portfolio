@@ -14,7 +14,7 @@ import {
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Software QA Engineer", "Automation Engineer", "Data Engineer", "Web Developer" ];
+    const toRotate = [ "Software QA Engineer", "Automation Engineer", "Data QA Engineer", "Web Developer" ];
     const [text, setText] = useState('');
     const period = 2000;
     const [delta, setDelta] = useState(200 - Math.random() * 100);

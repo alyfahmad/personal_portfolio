@@ -56,7 +56,7 @@ export const NavBar = () => {
                   {/* <a href="https://www.facebook.com/AlyfAhmad/" target="_blank"><img src={navIcon2} alt="Facebook"/></a> */}
                   <a href="https://www.instagram.com/alyf_ahmad/" target="_blank"><img src={navIcon3} alt="Instagram"/></a>
                   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=alif.ahmad.personal@gmail.com" target="_blank"><img src={mailIcon} alt="Send an Email"/></a>
-                  <a href="https://drive.google.com/uc?export=download&id=1RbhBXcDIzRPRYtDWJFPqY832h7_b5iby" target="_blank"><img src={navIcon4} alt="Download CV"/></a>
+                  <a href="https://drive.google.com/uc?export=download&id=1TLaPhC3cGrzcDUveWhLw7WOOSl1jy-Dj" target="_blank"><img src={navIcon4} alt="Download CV"/></a>
               </div>
               <Router>
                 <HashLink to='#connect'>

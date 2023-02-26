@@ -2,19 +2,23 @@ import { Container, Nav, Tab, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import underDevelopment from "../assets/img/underDevelopment.gif";
 import underDevelopment2 from "../assets/img/underDevelopment2.gif";
-import underDevelopment3 from "../assets/img/underDevelopment3.gif"
+import underDevelopment3 from "../assets/img/underDevelopment3.gif";
+import cypress from "../assets/img/cypress.gif";
+import ecommerce from "../assets/img/ecommerce.gif";
 
 export const Projects = () => {
     const projects1 = [
         {
-            title: "Under Development",
-            description: "Coming Soon",
-            imgUrl: underDevelopment,
+            title: "HRM Test Automation",
+            description: "Test Automation Project on a Single Page Human Resource Management App using Cypress following Page Object Model",
+            imgUrl: cypress,
+            link: "https://github.com/alyfahmad/cypress_automation"
         },
         {
-            title: "Under Development",
-            description: "Coming Soon",
-            imgUrl: underDevelopment2,
+            title: "E-Commerce Test Automation",
+            description: "Test Automation Project on a test ecommerce site using python, selenium and robotframework following Page Object Model",
+            imgUrl: ecommerce,
+            link: "https://github.com/alyfahmad/robot_framework_automation"
         },
         {
             title: "Under Development",

@@ -14,9 +14,9 @@ import {
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Software QA Engineer", "Automation Engineer", "Data QA Engineer", "Web Developer" ];
+    const toRotate = [ "SDET", "Automation Engr.", "Web Developer" ];
     const [text, setText] = useState('');
-    const period = 2000;
+    const period = 500;
     const [delta, setDelta] = useState(200 - Math.random() * 100);
     const [index, setIndex] = useState(1);
 
@@ -63,8 +63,8 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__zoomIn animate_slow" : "" }>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Alif Ahmad`}<br/><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Quality Assurance Engineer", "Automation Engineer", "Data Engineer", "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Seasoned experience in automation, data quality assurance, white box and manual testing for one of the leading Cloud based Practice Management Software provider 
-                     in the US and Canada. Possessing web development experience in national scale projects with millions of users.</p>
+                  <p>Seasoned experience in automation, data quality assurance, white box and manual testing for top Practice Management and EMR SaaS providers 
+                     in the US. Possessing Front End development experience in national scale projects with millions of users.</p>
                   <Router>
                   <HashLink to='#connect' style={{ textDecoration: 'none' }}>
                   <button>Contact Me <ArrowRightCircle size={25} /></button>

@@ -6,8 +6,33 @@ import TrackVisibility from 'react-on-screen';
 export const Experience = () => {
     const experience = [
         {
-            time: "September 2022 - Present",
-            title: "Senior Software Quality Assurance Engineer",
+            time: "September 2023 - Present",
+            title: "Software Development Engineer in Test",
+            subtitle: "Populate EMR",
+            description: <ul>
+                            <li><b><u>Technical Skills</u></b></li>
+                            <ul>
+                            <li>Web Automation testing with Nightwatch, Typescript and Selenium</li>
+                                <li>White Box Testing.</li>
+                                <li>Database and Data Integrity Testing.</li>
+                                <li>Integration Testing.</li>
+                                <li>API Testing with Postman and Custom Tools.</li>
+                                <li>Microsoft PowerBI Report Generation.</li>
+                            </ul>
+                            <br/>
+                            <li><b><u>Soft Skills</u></b></li>
+                            <ul>
+                                <li>Point of Contact for SDET Team.</li>
+                                <li>Maintained project dependencies using Asana.</li>
+                                <li>Lead daily communication and requirement gathering.</li>
+                                <li>Provided timely reports on automation progress and execution status.</li>
+                                <li>Delivered quality software through quality control test reports, determining software quality and readiness for release.</li>
+                            </ul>
+                        </ul>
+        },
+        {
+            time: "September 2020 - September 2023",
+            title: "Senior Software Quality Assurance Engineer (Level II)",
             subtitle: "Enosis Solutions",
             description: <ul>
                             <li><b><u>Technical Skills</u></b></li>
@@ -27,7 +52,7 @@ export const Experience = () => {
                             <ul>
                                 <li>Point of Contact for Data Testing Team with 3+ Members.</li>
                                 <li>Point of Contact for API Testing Team with 3 Members.</li>
-                                <li>Maintained project dependencies throught Jira & Confluence.</li>
+                                <li>Maintained project dependencies using Jira & Confluence.</li>
                                 <li>Lead daily communication and requirement gathering for Offshore Clients &#40;US&#41;.</li>
                                 <li>Provided timely reports on automation progress and execution status.</li>
                                 <li>Delivered quality software through quality control test reports, determining software quality and readiness for release.</li>
@@ -35,7 +60,7 @@ export const Experience = () => {
                         </ul>
         },
         {
-            time: "March 2020 - August 2020",
+            time: "January 2020 - August 2020",
             title: "Junior Programmer",
             subtitle: "Synesis IT",
             description: <ul>
@@ -46,7 +71,7 @@ export const Experience = () => {
                                 <li>API development.</li>
                                 <li>Windows Server Deployment.</li>
                                 <li>Part of National Level Projects with millions of users - 
-                                    <ul>
+                                    <ul>     
                                         <li>Shastho Batayon &#40;National HealthTelecommunication Helpline&#41;</li>
                                         <li>National Equipment Identity Register &#40;NIER&#41;</li>
                                         <li>BRAC Moner Jotno &#40;Mental Counselling Helpline&#41;</li>

@@ -197,7 +197,7 @@ export const Experience = () => {
       ),
     },
     {
-      time: "Januray 2019 - December 2019",
+      time: "January 2019 - December 2019",
       title: "Teaching Assistant",
       subtitle: "BRAC University",
       description: (
@@ -252,13 +252,13 @@ export const Experience = () => {
                           <div className="title" onClick={() => toggle(i)}>
                             <h3>{item.title}</h3>
                             <h6 className="theme">{item.subtitle}</h6>
-                            <div
-                              className={
-                                selected === i ? "content show" : "content"
-                              }
-                            >
-                              <p>{item.description}</p>
-                            </div>
+                          </div>
+                          <div
+                            className={
+                              selected === i ? "content show" : "content"
+                            }
+                          >
+                            {item.description}
                           </div>
                           <div
                             className="accordion-toggle"

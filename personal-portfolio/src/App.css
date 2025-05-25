@@ -135,7 +135,7 @@ p.danger {
 
 
 
-@media (min-width: 481px) and (max-width: 1920px) {
+@media (min-width: 481px) {
   .navbar-text button {
     font-weight: 700;
     color: #fff;
@@ -442,7 +442,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     }
 }
 }
-@media (min-width: 1367px) and (max-width: 1920px) {
+@media (min-width: 1367px) {
   .banner {
     margin-top: 0;
     padding: 200px 0 0px 0;
@@ -1346,7 +1346,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 8vh 0px 12vh 0px;
   }
 }
-@media   (min-width: 481px) and (max-width: 1920px) {
+@media   (min-width: 481px) {
   .contact {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,9,121,1) 40%, rgba(75,202,214,1) 100%);
